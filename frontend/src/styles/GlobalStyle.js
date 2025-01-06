@@ -48,4 +48,23 @@ h1, h2, h3, h4, h5, h6{
             }
         }
     }
+    @media (max-width: 768px) {
+    body {
+        font-size: clamp(0.9rem, 3vw, 1rem);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: clamp(0.8rem, 4vw, 0.9rem);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: clamp(1.2rem, 5vw, 1.5rem);
+    }
+}
 `
